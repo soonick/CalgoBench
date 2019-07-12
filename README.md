@@ -1,4 +1,4 @@
-https://travis-ci.com/soonick/CalgoBench.svg?branch=master
+[![Build Status](https://travis-ci.com/soonick/CalgoBench.svg?branch=master)](https://travis-ci.com/soonick/CalgoBench)
 
 # CalgoBench
 
