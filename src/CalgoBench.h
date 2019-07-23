@@ -20,6 +20,10 @@ class CalgoBenchLog {
   template <typename T>
   CalgoBenchLog& operator<<(const std::vector<T>& in);
 
+  template <typename T>
+  CalgoBenchLog& operator<<(const std::vector<std::vector<T>>& in);
+
+
  private:
   std::ostringstream stream;
 };

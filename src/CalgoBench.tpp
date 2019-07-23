@@ -16,6 +16,22 @@ CalgoBenchLog& CalgoBenchLog::operator<<(const std::vector<T>& in) {
   return *this;
 }
 
+template <typename T>
+CalgoBenchLog& CalgoBenchLog::operator<<(const std::vector<std::vector<T>>& in) {
+  stream << "vector: " << std::endl;
+  for (int i = 0; i < in.size(); i++) {
+    for (int j = 0; j < in[i].size(); j++) {
+      if (j != 0) {
+        stream << ", ";
+      }
+      stream << in[i][j];
+    }
+    stream << std::endl;
+  }
+
+  return *this;
+}
+
 template <typename Function, typename ...Args>
 void CalgoBench::profile(const std::string& description, Function f, Args... args) {
   CBL << "Profiling: " << description;

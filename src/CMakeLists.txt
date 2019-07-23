@@ -4,4 +4,4 @@ cmake_minimum_required(VERSION 3.0)
 # Name of the project
 project(CalgoBench)
 
-add_library(CalgoBench src/CalgoBench.cpp)
+add_library(CalgoBench CalgoBench.cpp)
